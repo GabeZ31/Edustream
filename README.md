@@ -14,12 +14,22 @@ Este proyecto está configurado para que su revisión sea extremadamente rápida
    ```bash
    composer install
    ```
-4. Configurar el archivo de entorno (asegurarse de tener un `.env` válido y la conexión a BD correcta).
-5. Ejecutar las migraciones y sembrar la base de datos (¡Este paso crea toda la estructura y datos de prueba!):
+4. Crear y configurar el archivo de entorno:
+   - Duplicar el archivo de ejemplo: `cp .env.example .env` (o `copy .env.example .env` en Windows).
+   - Generar la llave de la aplicación:
+     ```bash
+     php artisan key:generate
+     ```
+   - Configurar la conexión a la base de datos en el archivo `.env` con tus credenciales locales.
+5. Ejecutar las migraciones y sembrar la base de datos (¡Este paso crea la estructura y los usuarios de prueba!):
    ```bash
-   php artisan migrate:fresh --seed
+   php artisan migrate --seed
    ```
-6. Iniciar el servidor local:
+6. Crear el enlace simbólico para que los archivos multimedia subidos (videos, PDFs) sean accesibles públicamente:
+   ```bash
+   php artisan storage:link
+   ```
+7. Iniciar el servidor local:
    ```bash
    php artisan serve
    ```
