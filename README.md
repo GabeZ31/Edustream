@@ -2,7 +2,7 @@
 
 Proyecto desarrollado en **Laravel** con arquitectura **MVC** completa.
 
-## 🚀 Instalación y Pruebas (Guía para el Revisor)
+##  Instalación y Pruebas (Guía para el Revisor)
 
 Este proyecto está configurado para que su revisión sea extremadamente rápida y sencilla mediante el uso de Seeders y Factories de Laravel.
 
@@ -36,7 +36,7 @@ Este proyecto está configurado para que su revisión sea extremadamente rápida
 
 ---
 
-## 🔑 Credenciales de Prueba
+##  Credenciales de Prueba
 
 Al correr el comando `--seed`, el sistema automáticamente generó toda una red de canales y recursos. Para probar los distintos niveles de permisos y vistas, puedes usar cualquiera de estos usuarios fijos:
 
